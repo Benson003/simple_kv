@@ -13,7 +13,6 @@ pub const KvKey = struct {
 };
 
 pub const KvObjectTable = struct {
-    buffer: allocator.SlabAllocator,
     table: autoHashMap(KvKey, KvObject),
 };
 
